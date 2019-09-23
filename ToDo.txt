@@ -1,0 +1,68 @@
+For a more detailed description, see "Improvement proposal" in my Bachelor Thesis.
+- Code clean up (SignalHandler, Config and derived field remaining)
+- CSV output of plot data
+- Enhance config settings (permanent custom derived fields would be nice, and a default plot mode)
+- Add default to "Create Plot" after pressing "Restore from Param_Dict"
+- While calculating global extrema, have a progress dialog and possibility to write out the extrema
+- Region selection: Boolean and predefined regions
+- Enhance the menu (Shortcuts for derived fields and ScriptWriting)
+- ScriptWriter support even if no file is loaded?
+- Profile time as y-axis
+- Fractional phase/profile
+- Grids for cylindrical data
+- Plotting h5py-imported data
+
+Bugs found to fix later:
+- Figure gets printed to console in iPython
+- Weird behaviour for grid/streamline annotation if the center is set to (0, 0)  --> Warning already issued
+- Timestamp shouldn't be togglable (and turned off) if multiple profiles are selected  --> Warning already issued
+[Fixed]: Setting min/max for profile plots does always revert to default
+[Fixed]: Restore Plot settings doesn't work well with the slider
+[More or less fixed]: When drawing a line on a slice plot, the whole plot gets bigger
+
+Done:
+- Figure in another window
+- Min/Max Units
+- Min/Max Dictionary
+- Addition of Boundaries to Min/Max Dictionary
+- Set Heigth for slice
+- Reimplementation of signals and slots
+- Min/Max for projection
+- Divide by domain length for projection
+- Skript export of plot -> Done for Line, Slice, Phase, Profile and Projection and subtypes
+- Weight fields for Phase, Profile and Projection
+- Comments for script can be turned on/off
+- Reload from figure
+- Time series
+- Multiple 2D Profiles
+- Logging inside the GUI to communicate with user
+- Convenient Min/Max for x, y, z (through domain borders)
+- Custom Derived fields for script writer
+- Custom derived fields
+- Time Series 'Plot all'-implementation with option to save as movie
+- ScriptWriting possible just from settings
+- Particle annotation possible
+- Particle plot infrastructure
+- time as x-axis: options which quantity for y-field is calculated (i.e. 'max', 'min', 'weighted_averag' etc)
+- time as x-axis: added support for the stored values and different quantities
+- Scriptwriter for particle plots
+- Add possibility to open External Window without having to plot again
+- Make better size policy for everything
+- Fix zooming and link it to Matplotlib Navigation tool
+- Change zooming and panning to setting width and center
+- Implement a proper logger instead of printing everything
+- Menu Bar and shortcuts
+- Annotate timestamp possible for every plot type
+- Line length is displayed for line plots
+- Help for each plot type
+- Custom Normal Vector
+- Use threading to calculate plot data
+- Implement progress bars for time series things
+- Easier addition of derived fields
+- Aspect ratio can be ignored for slice or projection plots
+- Added a config file to store preferred settings (homedir, logging etc.)
+- Make 'Calculate Extrema' available in time series mode even if they have already been calculated
+- Global extrema for time series mode
+- Force override for custom derived fields
+- Write licensing stuff
+- User is asked before quitting (optional, togglable in the config options)

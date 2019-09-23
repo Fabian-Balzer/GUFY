@@ -1,0 +1,1 @@
+﻿This folder just contains an example for a better understanding of PyQt.
