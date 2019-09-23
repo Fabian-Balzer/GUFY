@@ -35,6 +35,9 @@ The following versions of python and packages need to be installed prior to usin
 ### Contact:
 If you find any bugs or the setup doesn't work, please contact me: fabian.balzer@studium.uni-hamburg.de
 
+#### Notes:
+Developed by Fabian Balzer based on the project math2.py by Jannik Schilling, September 2019
+
 ---
 
 ## Copyright:
@@ -45,6 +48,3 @@ Distributed under the terms of the GNU General Public License v3.0.
 The full license is in the file LICENSE.txt, distributed with this software.
 
 ---
-
-#### Notes:
-Developed by Fabian Balzer based on the project math.py by Jannik Schilling, September 2019
